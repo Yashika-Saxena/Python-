@@ -1,4 +1,13 @@
-# import sys
+#Problem Statement
+'''Ram and Karan are playing a game called colour mastermind. In the game the players are 
+given cards of n different colours. Ram has received r1 cards of colour 1, r2 cards of colour 
+2,…, rn cards of colour n. Karan has received k1 cards of colour 1, k2 cards of colour 2,…., 
+kn cards of colour n.
+Ram initiates play. During each player's turn, they must select a colour so that each player has 
+at least one card in that colour. Next, the player takes out one card of colour i, and their 
+opponent takes out all of the colour-i cards. When no colour remains such that each player 
+has at least one marble of that colour, the game is over. Now find the score in the game,
+Score = Sum of all cards of Ram - Sum of all cards of Karan'''
 def calculate_score(ram_marbles, karan_marbles):
     return sum(ram_marbles) - sum(karan_marbles)
 
